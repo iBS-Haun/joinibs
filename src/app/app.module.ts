@@ -14,6 +14,10 @@ import { AusbildungComponent } from './ausbildung/ausbildung.component';
 import { StudiumComponent } from './studium/studium.component';
 import { KontaktComponent } from './kontakt/kontakt.component';
 import { KevinsComponentComponent } from './kevins-component/kevins-component.component';
+import { FooterComponent } from './footer/footer.component';
+import { MatButtonModule } from '@angular/material/button';
+
+
 
 
 
@@ -27,7 +31,10 @@ import { KevinsComponentComponent } from './kevins-component/kevins-component.co
     AusbildungComponent,
     StudiumComponent,
     KontaktComponent,
-    KevinsComponentComponent
+    KevinsComponentComponent,
+    FooterComponent,
+    
+    
   ],
   imports: [
     MatToolbarModule,
@@ -36,7 +43,8 @@ import { KevinsComponentComponent } from './kevins-component/kevins-component.co
     BrowserModule,
     AppRoutingModule,
     BrowserAnimationsModule,
-    MatListModule
+    MatListModule,
+    MatButtonModule
   ],
   
   providers: [],
