@@ -20,6 +20,7 @@ import { KevinsComponentComponent } from './kevins-component/kevins-component.co
 
 
 
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -27,7 +28,8 @@ import { KevinsComponentComponent } from './kevins-component/kevins-component.co
     AusbildungComponent,
     StudiumComponent,
     KontaktComponent,
-    KevinsComponentComponent
+    KevinsComponentComponent,
+  
   ],
   imports: [
     MatToolbarModule,
