@@ -14,6 +14,14 @@ import { AusbildungComponent } from './ausbildung/ausbildung.component';
 import { StudiumComponent } from './studium/studium.component';
 import { KontaktComponent } from './kontakt/kontakt.component';
 import { KevinsComponentComponent } from './kevins-component/kevins-component.component';
+<<<<<<< Updated upstream
+=======
+import { FooterComponent } from './footer/footer.component';
+import { MatButtonModule } from '@angular/material/button';
+import { AboutComponent } from './about/about.component';
+
+
+>>>>>>> Stashed changes
 
 
 
@@ -27,7 +35,15 @@ import { KevinsComponentComponent } from './kevins-component/kevins-component.co
     AusbildungComponent,
     StudiumComponent,
     KontaktComponent,
+<<<<<<< Updated upstream
     KevinsComponentComponent
+=======
+    KevinsComponentComponent,
+    FooterComponent,
+    AboutComponent,
+    
+    
+>>>>>>> Stashed changes
   ],
   imports: [
     MatToolbarModule,
