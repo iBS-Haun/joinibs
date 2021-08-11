@@ -18,6 +18,7 @@ import { FooterComponent } from './footer/footer.component';
 import { MatButtonModule } from '@angular/material/button';
 import { WindowsComponent } from './windows/windows.component';
 import { MatCardModule } from '@angular/material/card';
+import { AboutComponent } from './about/about.component';
 
 
 
@@ -37,6 +38,7 @@ import { MatCardModule } from '@angular/material/card';
     KevinsComponentComponent,
     FooterComponent,
     WindowsComponent,
+    AboutComponent,
     
     
   ],
