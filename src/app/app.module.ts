@@ -16,6 +16,9 @@ import { KontaktComponent } from './kontakt/kontakt.component';
 import { KevinsComponentComponent } from './kevins-component/kevins-component.component';
 import { FooterComponent } from './footer/footer.component';
 import { MatButtonModule } from '@angular/material/button';
+import { WindowsComponent } from './windows/windows.component';
+import { MatCardModule } from '@angular/material/card';
+
 
 
 
@@ -33,6 +36,7 @@ import { MatButtonModule } from '@angular/material/button';
     KontaktComponent,
     KevinsComponentComponent,
     FooterComponent,
+    WindowsComponent,
     
     
   ],
@@ -44,7 +48,8 @@ import { MatButtonModule } from '@angular/material/button';
     AppRoutingModule,
     BrowserAnimationsModule,
     MatListModule,
-    MatButtonModule
+    MatButtonModule,
+    MatCardModule,
   ],
   
   providers: [],

@@ -1,0 +1,87 @@
+.flex-container{
+    display:flex;
+    justify-content:space-evenly;
+    align-items: center;
+    padding-left: 175px;
+    padding-right: 175px;
+}
+
+.buttons{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 225px;
+    margin-bottom: 8%;
+}
+.buttons1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 167px;
+    margin-bottom: 8%;
+}
+mat-card-title{
+    align-items:center;
+    justify-content:space-around;
+    text-align: center;
+    line-height: 115%;
+}
+.karriere{
+    width: 30%;
+    height: 45%;
+    background-color: #EEEEEE;
+    border-radius: 15px;
+    background-image: url("https://media.istockphoto.com/vectors/network-connection-modern-design-abstract-science-and-technology-vector-id945169578?k=6&m=945169578&s=612x612&w=0&h=FuIYpHgkQwRtDiTHbiT_g3JaDsHsVomNxKI8sGIp1Sc=");
+    background-size: 130%;
+    margin: 20px;
+    /*Animation*/
+    transition: 250ms;
+    
+}
+.ausbildung{
+    width: 30%;
+    height: 45%;
+    background-color: #EEEEEE;
+    border-radius: 15px;
+    background-image: url("https://media.istockphoto.com/vectors/abstract-vector-triangle-background-polygonal-network-pattern-blue-vector-id1078530626?k=6&m=1078530626&s=612x612&w=0&h=5OStmhPE1YG6KZG6ZtNjvhWcp-QVljw4kNR1DP0I6yI=");
+    background-size: 170%;
+    margin: 20px;
+    /*Animation*/
+    transition: 250ms;
+    
+}
+.studium{
+    width: 30%;
+    height: 45%;
+    background-color: #EEEEEE;
+    border-radius: 15px;
+    background-image: url("https://media.istockphoto.com/vectors/abstract-vector-triangle-background-low-poly-network-pattern-blue-vector-id1082376556?k=6&m=1082376556&s=612x612&w=0&h=4puiso7ty_QtVNopwK-yrMWJwJPO_32eJLp3u3EmTz0=");
+    margin: 20px;
+    background-size: 165%;
+    background-position:right;
+    /*Animation*/
+    transition: 250ms;
+}
+/*Animation*/
+
+.karriere:hover {
+    transform: scale(120%);
+    filter:brightness(90%);
+    background-size: 140%;
+}
+.ausbildung:hover{
+    transform: scale(120%);
+    filter:brightness(90%);
+    background-size: 180%;
+}
+.studium:hover{
+    transform: scale(120%);
+    filter:brightness(90%);
+    background-size: 175%;
+}
+.buttons:hover{
+    filter: brightness(125%);
+}
+.buttons1:hover{
+    filter: brightness(125%);
+}
