@@ -2,8 +2,8 @@
     display:flex;
     justify-content:space-evenly;
     align-items: center;
-    padding-left: 175px;
-    padding-right: 175px;
+    padding-left: 10%;
+    padding-right: 10%;
     margin-top: 7.5%;
     margin-bottom: 7.5%;
 }
@@ -12,16 +12,10 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-top: 225px;
+    margin-top: 75%;
     margin-bottom: 8%;
 }
-.buttons1{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-top: 167px;
-    margin-bottom: 8%;
-}
+
 mat-card-title{
     align-items:center;
     justify-content:space-around;
@@ -35,7 +29,7 @@ mat-card-title{
     border-radius: 15px;
     background-image: url("https://media.istockphoto.com/vectors/network-connection-modern-design-abstract-science-and-technology-vector-id945169578?k=6&m=945169578&s=612x612&w=0&h=FuIYpHgkQwRtDiTHbiT_g3JaDsHsVomNxKI8sGIp1Sc=");
     background-size: 130%;
-    margin: 20px;
+    margin: 2.5%;
     /*Animation*/
     transition: 250ms;
     
@@ -47,7 +41,7 @@ mat-card-title{
     border-radius: 15px;
     background-image: url("https://media.istockphoto.com/vectors/abstract-vector-triangle-background-polygonal-network-pattern-blue-vector-id1078530626?k=6&m=1078530626&s=612x612&w=0&h=5OStmhPE1YG6KZG6ZtNjvhWcp-QVljw4kNR1DP0I6yI=");
     background-size: 170%;
-    margin: 20px;
+    margin: 2.5%;
     /*Animation*/
     transition: 250ms;
     
@@ -58,7 +52,7 @@ mat-card-title{
     background-color: #EEEEEE;
     border-radius: 15px;
     background-image: url("https://media.istockphoto.com/vectors/abstract-vector-triangle-background-low-poly-network-pattern-blue-vector-id1082376556?k=6&m=1082376556&s=612x612&w=0&h=4puiso7ty_QtVNopwK-yrMWJwJPO_32eJLp3u3EmTz0=");
-    margin: 20px;
+    margin: 2.5%;
     background-size: 165%;
     background-position:right;
     /*Animation*/
