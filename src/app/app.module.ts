@@ -19,6 +19,7 @@ import { MatButtonModule } from '@angular/material/button';
 import { WindowsComponent } from './windows/windows.component';
 import { MatCardModule } from '@angular/material/card';
 import { AboutComponent } from './about/about.component';
+import { PiechartComponent } from './piechart/piechart.component';
 
 
 
@@ -39,6 +40,7 @@ import { AboutComponent } from './about/about.component';
     FooterComponent,
     WindowsComponent,
     AboutComponent,
+    PiechartComponent,
     
     
   ],
