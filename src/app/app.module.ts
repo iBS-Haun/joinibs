@@ -9,7 +9,7 @@ import { MainNavComponent } from './main-nav/main-nav.component';
 import { MatToolbarModule } from '@angular/material/toolbar';
 import { MatSidenavModule } from '@angular/material/sidenav';
 import { MatIconModule } from '@angular/material/icon';
-import {​​​ MatListModule }​​​ from '@angular/material/list';
+import { MatListModule } from '@angular/material/list';
 import { AusbildungComponent } from './ausbildung/ausbildung.component';
 import { StudiumComponent } from './studium/studium.component';
 import { KontaktComponent } from './kontakt/kontakt.component';
@@ -19,14 +19,9 @@ import { MatButtonModule } from '@angular/material/button';
 import { WindowsComponent } from './windows/windows.component';
 import { MatCardModule } from '@angular/material/card';
 import { AboutComponent } from './about/about.component';
-
-
-
-
-
-
-
-
+import { CommonModule } from '@angular/common';
+import { MainNavNewComponent } from './main-nav-new/main-nav-new.component';
+import { LayoutModule } from '@angular/cdk/layout';
 
 @NgModule({
   declarations: [
@@ -39,8 +34,7 @@ import { AboutComponent } from './about/about.component';
     FooterComponent,
     WindowsComponent,
     AboutComponent,
-    
-    
+    MainNavNewComponent,
   ],
   imports: [
     MatToolbarModule,
@@ -52,10 +46,10 @@ import { AboutComponent } from './about/about.component';
     MatListModule,
     MatButtonModule,
     MatCardModule,
+    LayoutModule,
   ],
-  
-  providers: [],
-  bootstrap: [AppComponent]
-})
-export class AppModule { };
 
+  providers: [],
+  bootstrap: [AppComponent],
+})
+export class AppModule {}
