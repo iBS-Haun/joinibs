@@ -1,4 +1,3 @@
-
 .about{
     text-align: center;
     background-image: url("https://wallpaperaccess.com/full/449940.jpg");
@@ -8,12 +7,12 @@
 p.absatz {
     -webkit-animation: einblenden 2.5s;
 }
-
+ 
 @-webkit-keyframes einblenden {
     from {opacity: 0;}
     to {opacity: 1;}
 }
-
+ 
 /*Einblendung von Schrift
 .fancy {
     -webkit-animation: einblenden 2.5s;
@@ -22,7 +21,7 @@ p.absatz {
     from { opacity:0; }
     to { opacity:1; }
 }
-
+ 
 .fancy {
     -webkit-animation: einblenden 2.5s;
 }
@@ -30,7 +29,7 @@ p.absatz {
     from { opacity:0; }
     to { opacity:1; }
 } */
-
+ 
 /*Buttons*/
 .button{
     display: inline-block;
@@ -41,7 +40,7 @@ p.absatz {
 .button:hover{
     transform: translateY(-5px);
 }
-
+ 
 /* ibs-innovative solutions ag */
 .untere_überschrift{
     text-decoration: none;
@@ -51,12 +50,12 @@ p.absatz {
     padding-left: 20px;
     margin-top: 60px;
 }
-
+ 
 .text{
     font-size: large;
     margin-top: 60px;
 }
-
+ 
 img{
     margin-top: 60px;
 }
