@@ -20,7 +20,7 @@ import { WindowsComponent } from './windows/windows.component';
 import { MatCardModule } from '@angular/material/card';
 import { AboutComponent } from './about/about.component';
 import { PiechartComponent } from './piechart/piechart.component';
-
+import { BewerbungComponent } from './bewerbung/bewerbung.component';
 
 
 
@@ -41,6 +41,7 @@ import { PiechartComponent } from './piechart/piechart.component';
     WindowsComponent,
     AboutComponent,
     PiechartComponent,
+    BewerbungComponent
     
     
   ],
