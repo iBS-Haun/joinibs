@@ -1,0 +1,36 @@
+.flex-container{
+    display:flex;
+    justify-content:space-evenly;
+    align-items: center;
+    padding-left: 10%;
+    padding-right: 10%;
+    margin-top: 7.5%;
+    margin-bottom: 7.5%;
+    height: 25%;
+}
+mat-card-title{
+    align-items:center;
+    justify-content:space-around;
+    text-align: center;
+    line-height: 115%;
+}
+mat-card-content{
+    margin-top: 10%;
+}
+mat-card{
+    width: 30%;
+    height: 45%;
+    border-radius: 15px;
+    margin: 2.5%;
+    text-align: center;
+}
+.buttons{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 7%;
+}
+mat-card-actions{
+    justify-content: space-around;
+    align-items: center;
+}

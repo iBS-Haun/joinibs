@@ -21,6 +21,9 @@ import { MatCardModule } from '@angular/material/card';
 import { AboutComponent } from './about/about.component';
 import { PiechartComponent } from './piechart/piechart.component';
 import { BewerbungComponent } from './bewerbung/bewerbung.component';
+import { AusbildungWindowsComponent } from './ausbildung-windows/ausbildung-windows.component';
+import {MatExpansionModule} from '@angular/material/expansion';
+import {MatFormFieldModule} from '@angular/material/form-field';
 
 
 
@@ -41,7 +44,9 @@ import { BewerbungComponent } from './bewerbung/bewerbung.component';
     WindowsComponent,
     AboutComponent,
     PiechartComponent,
-    BewerbungComponent
+    BewerbungComponent,
+    AusbildungWindowsComponent,
+    
     
     
   ],
@@ -55,6 +60,8 @@ import { BewerbungComponent } from './bewerbung/bewerbung.component';
     MatListModule,
     MatButtonModule,
     MatCardModule,
+    MatExpansionModule,
+    MatFormFieldModule
   ],
   
   providers: [],
