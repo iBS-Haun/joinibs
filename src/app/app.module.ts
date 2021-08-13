@@ -9,7 +9,7 @@ import { MainNavComponent } from './main-nav/main-nav.component';
 import { MatToolbarModule } from '@angular/material/toolbar';
 import { MatSidenavModule } from '@angular/material/sidenav';
 import { MatIconModule } from '@angular/material/icon';
-import {​​​ MatListModule }​​​ from '@angular/material/list';
+import { MatListModule } from '@angular/material/list';
 import { AusbildungComponent } from './ausbildung/ausbildung.component';
 import { StudiumComponent } from './studium/studium.component';
 import { KontaktComponent } from './kontakt/kontakt.component';
@@ -19,14 +19,11 @@ import { MatButtonModule } from '@angular/material/button';
 import { WindowsComponent } from './windows/windows.component';
 import { MatCardModule } from '@angular/material/card';
 import { AboutComponent } from './about/about.component';
-import { PiechartComponent } from './piechart/piechart.component';
+import { MainNavNewComponent } from './main-nav-new/main-nav-new.component';
+import { LayoutModule } from '@angular/cdk/layout';
 import { BewerbungComponent } from './bewerbung/bewerbung.component';
 import { FlexLayoutModule } from '@angular/flex-layout';
-
-
-
-
-
+import { PiechartComponent } from './piechart/piechart.component';
 
 
 
@@ -41,10 +38,9 @@ import { FlexLayoutModule } from '@angular/flex-layout';
     FooterComponent,
     WindowsComponent,
     AboutComponent,
+    MainNavNewComponent,
+    BewerbungComponent,
     PiechartComponent,
-    BewerbungComponent
-    
-    
   ],
   imports: [
     MatToolbarModule,
@@ -56,11 +52,12 @@ import { FlexLayoutModule } from '@angular/flex-layout';
     MatListModule,
     MatButtonModule,
     MatCardModule,
-    FlexLayoutModule
-  ],
-  
-  providers: [],
-  bootstrap: [AppComponent]
-})
-export class AppModule { };
+    FlexLayoutModule,
+    LayoutModule,
 
+  ],
+
+  providers: [],
+  bootstrap: [AppComponent],
+})
+export class AppModule {}
