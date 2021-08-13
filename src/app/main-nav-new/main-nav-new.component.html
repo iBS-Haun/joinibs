@@ -1,0 +1,72 @@
+<mat-sidenav-container class="sidenav-container">
+  <mat-sidenav
+    #drawer
+    class="sidenav"
+    fixedInViewport
+    [attr.role]="(isHandset$ | async) ? 'dialog' : 'navigation'"
+    [mode]="(isHandset$ | async) ? 'over' : 'side'"
+    [opened]="(isHandset$ | async) === false"
+  >
+    <mat-toolbar>Menu</mat-toolbar>
+    <mat-nav-list>
+      <a
+        mat-list-item
+        href="#"
+        routerLink="/ausbildung"
+        routerLinkActive="active"
+        >Ausbildung</a
+      >
+      <a mat-list-item href="#" routerLink="/studium" routerLinkActive="active"
+        >Duales Studium</a
+      >
+      <a
+        mat-list-item
+        href="https://www.ibs-banking.com/de/unternehmen/karriere.html"
+        >Karriere</a
+      >
+    </mat-nav-list>
+  </mat-sidenav>
+  <mat-sidenav-content>
+    <mat-toolbar color="primary">
+      <button
+        type="button"
+        aria-label="Toggle sidenav"
+        mat-icon-button
+        (click)="drawer.toggle()"
+        *ngIf="isHandset$ | async"
+      >
+        <mat-icon aria-label="Side nav toggle icon">menu</mat-icon>
+      </button>
+      <span>
+        <a href="http://localhost:4200/"
+          ><img
+            src="assets/img/1552585829.png"
+            alt="Join iBS"
+            style="max-height: 50px" /></a
+      ></span>
+      <span class="spacer"></span>
+      <div class="content-of-toolbar">
+        <div class="buttons-toolbar">
+          <button mat-button color="accent">
+            <a href="#" routerLink="/ausbildung" routerLinkActive="active"
+              >Ausbildung</a
+            >
+          </button>
+          <button mat-button color="accent">
+            <a href="#" routerLink="/studium" routerLinkActive="active"
+              >Duales Studium</a
+            >
+          </button>
+
+          <button mat-button color="accent">
+            <a href="https://www.ibs-banking.com/de/unternehmen/karriere.html"
+              >Karriere</a
+            >
+          </button>
+        </div>
+      </div>
+    </mat-toolbar>
+    <ng-content></ng-content>
+    <!-- Add Content Here -->
+  </mat-sidenav-content>
+</mat-sidenav-container>
