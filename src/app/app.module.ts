@@ -19,9 +19,10 @@ import { MatButtonModule } from '@angular/material/button';
 import { WindowsComponent } from './windows/windows.component';
 import { MatCardModule } from '@angular/material/card';
 import { AboutComponent } from './about/about.component';
-import { CommonModule } from '@angular/common';
 import { MainNavNewComponent } from './main-nav-new/main-nav-new.component';
 import { LayoutModule } from '@angular/cdk/layout';
+import { BewerbungComponent } from './bewerbung/bewerbung.component';
+import { PiechartComponent } from './piechart/piechart.component';
 
 @NgModule({
   declarations: [
@@ -35,6 +36,8 @@ import { LayoutModule } from '@angular/cdk/layout';
     WindowsComponent,
     AboutComponent,
     MainNavNewComponent,
+    BewerbungComponent,
+    PiechartComponent,
   ],
   imports: [
     MatToolbarModule,
