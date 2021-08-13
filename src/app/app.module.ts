@@ -23,6 +23,7 @@ import { MainNavNewComponent } from './main-nav-new/main-nav-new.component';
 import { LayoutModule } from '@angular/cdk/layout';
 import { BewerbungComponent } from './bewerbung/bewerbung.component';
 import { PiechartComponent } from './piechart/piechart.component';
+import { AusbildungWindowsComponent } from './ausbildung-windows/ausbildung-windows.component';
 
 @NgModule({
   declarations: [
@@ -38,6 +39,7 @@ import { PiechartComponent } from './piechart/piechart.component';
     MainNavNewComponent,
     BewerbungComponent,
     PiechartComponent,
+    AusbildungWindowsComponent
   ],
   imports: [
     MatToolbarModule,
