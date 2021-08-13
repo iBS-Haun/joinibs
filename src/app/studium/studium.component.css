@@ -1,0 +1,44 @@
+.grid-container {
+  display: grid;
+  grid-template-columns: 1fr 13rem;
+  max-width: 1200px;
+  margin: 1rem auto;
+  gap: 1.5rem;
+  padding: 1.5rem;
+}
+.contact-card {
+  background-color: #eeeeee;
+}
+.main-content {
+}
+h3 {
+  color: rgb(73, 146, 255);
+}
+.bewerben-button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+/* unvisited link */
+a:link {
+  color: rgb(34, 122, 255);
+}
+
+/* visited link */
+a:visited {
+  color: rgb(34, 122, 255);
+}
+
+/* mouse over link */
+a:hover {
+  color: rgb(103, 164, 255);
+}
+
+/* selected link */
+a:active {
+  color: rgb(34, 122, 255);
+}
+
+.mat-button.mat-primary .mat-button-focus-overlay {
+  background-color: #eeeeee;
+}

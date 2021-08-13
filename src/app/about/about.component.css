@@ -2,7 +2,7 @@
   text-align: center;
   background-image: url("https://wallpaperaccess.com/full/4660871.png");
   width: 100%;
-  /*  display: flex; */
+  display: column;
 }
 /*
 p.absatz {
@@ -30,7 +30,7 @@ p.absatz {
     from { opacity:0; }
     to { opacity:1; }
 } */
- 
+
 /*Buttons*/
 .button {
   display: inline-block;
@@ -41,31 +41,34 @@ p.absatz {
 .button:hover {
   transform: translateY(-5px);
 }
- 
-/* ibs-innovative solutions ag */
-.untere_überschrift {
+
+/* ibs-innovative solutions ag * IN STYLE.CSS VERSCHOBEN ZWINKERSMILEY/
+/* .untere_überschrift {
   text-decoration: none;
-  font-family: sans-serif;
-  /* font-size: 45px; */
-  font-weight: 500;
+  font-family: sans-serif */
+/* font-size: 45px; */
+/*   font-weight: 500;
   padding-left: 20px;
-  margin-top: 60px;
-  /* font-size: 3rem; */
-  /*  font-size: 1.5rem; */
-  /*   Formel um font-size skalierung zu berechnen:
+  margin-top: 60px; */
+/* font-size: 3rem; */
+/*  font-size: 1.5rem; */
+/*   Formel um font-size skalierung zu berechnen:
   https://css-tricks.com/linearly-scale-font-size-with-css-clamp-based-on-the-viewport/
   -> irgendwas stimmt hier noch nicht! */
-  /* font-size: clamp(1.5rem, 0.992rem+3.08vw, 3rem); */
-  font-size: clamp(1.5rem, 0.9225rem + 3.08vw, 3rem);
-}
+/* font-size: 6.5rem; */
+/* 1080p max */
+/*   font-size: clamp(1.5rem, 0.9225rem + 3.08vw, 3rem); */
+/* 4k max, sieht kacke aus */
+/* font-size: clamp(1.5rem, 0.6935rem + 4.3011vw, 6.5rem);*/
+/* } */
 
-.text {
-  /* font-size: large; */
-  margin-top: 60px;
-  /* font-size: 1.2rem; */
-  /* font-size: 0.7rem; */
-  font-size: clamp(0.7rem, 0.508rem + 1.02vw, 1.2rem);
-}
+/* .text { */
+/* font-size: large; */
+/*   margin-top: 60px; */
+/* font-size: 4rem; */
+/* font-size: 0.7rem; */
+/*   font-size: clamp(0.7rem, 0.508rem + 1.02vw, 1.2rem);
+} */
 
 img {
   margin-top: 60px;
