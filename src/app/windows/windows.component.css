@@ -1,7 +1,5 @@
 .flex-container {
   display: grid;
-  /*   justify-content: space-evenly;
-  align-items: center; */
   grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
   max-width: 1200px;
   margin: 1rem auto;
@@ -19,6 +17,7 @@
 }
 
 .mat-raised-button {
+  min-height: 5rem;
   white-space: normal;
 }
 
@@ -32,10 +31,6 @@ mat-card-title {
 mat-card {
   width: fit-content;
 }
-
-/* .scaleable-font {
-  font-size: 1vw;
-} */
 
 .karriere {
   background-image: url("https://media.istockphoto.com/vectors/network-connection-modern-design-abstract-science-and-technology-vector-id945169578?k=6&m=945169578&s=612x612&w=0&h=FuIYpHgkQwRtDiTHbiT_g3JaDsHsVomNxKI8sGIp1Sc=");
@@ -51,7 +46,6 @@ mat-card {
   border-radius: 15px;
   background-size: cover;
   background-position: right;
-  /*Animation*/
   transition: 250ms;
   width: 100%;
   box-sizing: border-box;
@@ -61,7 +55,6 @@ mat-card {
   min-height: 25rem;
   padding: 2rem;
 }
-/*Animation*/
 
 .karriere-card:hover {
   transform: scale(105%);
@@ -75,16 +68,6 @@ mat-card {
   filter: brightness(125%);
 }
 @media (max-width: 930px) {
-  /*  .flex-container {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;
-    align-items: center;
-    padding-left: 10%;
-    padding-right: 10%;
-    margin-top: 7.5%;
-    margin-bottom: 7.5%;
-  } */
   .scaleable-font {
     font-size: 1.3vw;
   }

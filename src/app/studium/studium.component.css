@@ -19,22 +19,18 @@ h3 {
   justify-content: center;
   align-items: center;
 }
-/* unvisited link */
 a:link {
   color: rgb(34, 122, 255);
 }
 
-/* visited link */
 a:visited {
   color: rgb(34, 122, 255);
 }
 
-/* mouse over link */
 a:hover {
   color: rgb(103, 164, 255);
 }
 
-/* selected link */
 a:active {
   color: rgb(34, 122, 255);
 }
