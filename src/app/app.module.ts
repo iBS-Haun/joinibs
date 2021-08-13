@@ -21,6 +21,7 @@ import { MatCardModule } from '@angular/material/card';
 import { AboutComponent } from './about/about.component';
 import { PiechartComponent } from './piechart/piechart.component';
 import { BewerbungComponent } from './bewerbung/bewerbung.component';
+import { FlexLayoutModule } from '@angular/flex-layout';
 
 
 
@@ -55,6 +56,7 @@ import { BewerbungComponent } from './bewerbung/bewerbung.component';
     MatListModule,
     MatButtonModule,
     MatCardModule,
+    FlexLayoutModule
   ],
   
   providers: [],
