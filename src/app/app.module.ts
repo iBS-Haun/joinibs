@@ -9,7 +9,7 @@ import { MainNavComponent } from './main-nav/main-nav.component';
 import { MatToolbarModule } from '@angular/material/toolbar';
 import { MatSidenavModule } from '@angular/material/sidenav';
 import { MatIconModule } from '@angular/material/icon';
-import {​​​ MatListModule }​​​ from '@angular/material/list';
+import { MatListModule } from '@angular/material/list';
 import { AusbildungComponent } from './ausbildung/ausbildung.component';
 import { StudiumComponent } from './studium/studium.component';
 import { KontaktComponent } from './kontakt/kontakt.component';
@@ -19,18 +19,10 @@ import { MatButtonModule } from '@angular/material/button';
 import { WindowsComponent } from './windows/windows.component';
 import { MatCardModule } from '@angular/material/card';
 import { AboutComponent } from './about/about.component';
-import { PiechartComponent } from './piechart/piechart.component';
+import { MainNavNewComponent } from './main-nav-new/main-nav-new.component';
+import { LayoutModule } from '@angular/cdk/layout';
 import { BewerbungComponent } from './bewerbung/bewerbung.component';
-import { AusbildungWindowsComponent } from './ausbildung-windows/ausbildung-windows.component';
-import {MatExpansionModule} from '@angular/material/expansion';
-import {MatFormFieldModule} from '@angular/material/form-field';
-
-
-
-
-
-
-
+import { PiechartComponent } from './piechart/piechart.component';
 
 @NgModule({
   declarations: [
@@ -43,12 +35,9 @@ import {MatFormFieldModule} from '@angular/material/form-field';
     FooterComponent,
     WindowsComponent,
     AboutComponent,
-    PiechartComponent,
+    MainNavNewComponent,
     BewerbungComponent,
-    AusbildungWindowsComponent,
-    
-    
-    
+    PiechartComponent,
   ],
   imports: [
     MatToolbarModule,
@@ -60,12 +49,10 @@ import {MatFormFieldModule} from '@angular/material/form-field';
     MatListModule,
     MatButtonModule,
     MatCardModule,
-    MatExpansionModule,
-    MatFormFieldModule
+    LayoutModule,
   ],
-  
-  providers: [],
-  bootstrap: [AppComponent]
-})
-export class AppModule { };
 
+  providers: [],
+  bootstrap: [AppComponent],
+})
+export class AppModule {}

@@ -1,19 +1,19 @@
-
-.about{
-    text-align: center;
-    background-image: url("https://wallpaperaccess.com/full/449940.jpg");
-    width: 100%;
+.about {
+  text-align: center;
+  background-image: url("https://wallpaperaccess.com/full/4660871.png");
+  width: 100%;
+  /*  display: flex; */
 }
 /*
 p.absatz {
     -webkit-animation: einblenden 2.5s;
 }
-
+ 
 @-webkit-keyframes einblenden {
     from {opacity: 0;}
     to {opacity: 1;}
 }
-
+ 
 /*Einblendung von Schrift
 .fancy {
     -webkit-animation: einblenden 2.5s;
@@ -22,7 +22,7 @@ p.absatz {
     from { opacity:0; }
     to { opacity:1; }
 }
-
+ 
 .fancy {
     -webkit-animation: einblenden 2.5s;
 }
@@ -30,33 +30,58 @@ p.absatz {
     from { opacity:0; }
     to { opacity:1; }
 } */
-
+ 
 /*Buttons*/
-.button{
-    display: inline-block;
+.button {
+  display: inline-block;
   padding-bottom: 60px;
-   margin-top: 80px;
-   transition:ease-in-out 0.3s;
+  margin-top: 80px;
+  transition: ease-in-out 0.3s;
 }
-.button:hover{
-    transform: translateY(-5px);
+.button:hover {
+  transform: translateY(-5px);
+}
+ 
+/* ibs-innovative solutions ag */
+.untere_überschrift {
+  text-decoration: none;
+  font-family: sans-serif;
+  /* font-size: 45px; */
+  font-weight: 500;
+  padding-left: 20px;
+  margin-top: 60px;
+  /* font-size: 3rem; */
+  /*  font-size: 1.5rem; */
+  /*   Formel um font-size skalierung zu berechnen:
+  https://css-tricks.com/linearly-scale-font-size-with-css-clamp-based-on-the-viewport/
+  -> irgendwas stimmt hier noch nicht! */
+  /* font-size: clamp(1.5rem, 0.992rem+3.08vw, 3rem); */
+  font-size: clamp(1.5rem, 0.9225rem + 3.08vw, 3rem);
 }
 
-/* ibs-innovative solutions ag */
-.untere_überschrift{
+.text {
+  /* font-size: large; */
+  margin-top: 60px;
+  /* font-size: 1.2rem; */
+  /* font-size: 0.7rem; */
+  font-size: clamp(0.7rem, 0.508rem + 1.02vw, 1.2rem);
+}
+
+img {
+  margin-top: 60px;
+}
+
+/* @media (max-width: 920px) {
+  .untere_überschrift {
     text-decoration: none;
     font-family: sans-serif;
-    font-size: 45px;
-    font-weight: 500;  
+    font-weight: 500;
     padding-left: 20px;
     margin-top: 60px;
-}
-
-.text{
-    font-size: large;
-    margin-top: 60px;
-}
-
-img{
-    margin-top: 60px;
-}
+    font-size: 4vw;
+  }
+  .text {
+    font-size: 2vw;
+    margin-top: 2vw;
+  }
+} */
