@@ -7,6 +7,15 @@
     margin-bottom: 7.5%;
     height: 20%;
 }
+.fled-container2{
+    display: flex;
+    flex-wrap: wrap;
+}
+.flex-item{
+    flex-basis: 50%;
+    flex-grow: 1;
+    flex-shrink: 1;
+}
 mat-card-title{
     align-items:center;
     justify-content:space-around;
@@ -18,7 +27,7 @@ mat-card-content{
 }
 mat-card{
     width: 30%;
-    height: 60%;
+    height: auto;
     border-radius: 15px;
     margin: 2.5%;
     text-align: center;
