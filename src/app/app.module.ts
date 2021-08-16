@@ -23,7 +23,8 @@ import { MainNavNewComponent } from './main-nav-new/main-nav-new.component';
 import { LayoutModule } from '@angular/cdk/layout';
 import { BewerbungComponent } from './bewerbung/bewerbung.component';
 import { FlexLayoutModule } from '@angular/flex-layout';
-import { PiechartComponent } from './piechart/piechart.component';
+import { PiechartFixComponent } from './piechart-fix/piechart-fix.component';
+import { ChartsModule } from 'ng2-charts';
 
 
 
@@ -40,7 +41,7 @@ import { PiechartComponent } from './piechart/piechart.component';
     AboutComponent,
     MainNavNewComponent,
     BewerbungComponent,
-    PiechartComponent,
+    PiechartFixComponent,
   ],
   imports: [
     MatToolbarModule,
@@ -54,6 +55,7 @@ import { PiechartComponent } from './piechart/piechart.component';
     MatCardModule,
     FlexLayoutModule,
     LayoutModule,
+    ChartsModule,
 
   ],
 

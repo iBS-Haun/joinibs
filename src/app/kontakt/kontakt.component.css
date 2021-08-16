@@ -77,12 +77,14 @@
         display: flex;
         justify-content: center;
         padding-bottom: 10%;
-        
+       
        
     }
     
     .content > mat-card {
         width: 230px;
+        justify-content: center;
+        text-align: center;
     }
 
     .mat-elevation-z4:hover {
@@ -91,3 +93,5 @@
     background-size: 180%;
     }
    
+   
+  
