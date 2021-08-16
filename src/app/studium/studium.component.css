@@ -8,11 +8,13 @@
 }
 .contact-card {
   background-color: #eeeeee;
+  padding: 1rem;
 }
 .main-content {
 }
-h3 {
-  color: rgb(73, 146, 255);
+
+.mat-h3 {
+  color: #03a9f4;
 }
 .bewerben-button {
   display: flex;
@@ -20,21 +22,33 @@ h3 {
   align-items: center;
 }
 a:link {
-  color: rgb(34, 122, 255);
+  color: #03a9f4;
 }
 
 a:visited {
-  color: rgb(34, 122, 255);
+  color: #03a9f4;
 }
 
 a:hover {
-  color: rgb(103, 164, 255);
+  color: #03a9f4;
 }
 
 a:active {
-  color: rgb(34, 122, 255);
+  color: #03a9f4;
 }
+@media (max-width: 920px) {
+  .grid-container {
+    display: grid;
+    grid-template-rows: auto;
+    max-width: 1200px;
+    margin: 1rem auto;
+    gap: 1.5rem;
+    padding: 1.5rem;
+    grid-template-columns: none;
+  }
 
-.mat-button.mat-primary .mat-button-focus-overlay {
-  background-color: #eeeeee;
+  .contact-card {
+    background-color: #eeeeee;
+    text-align: center;
+  }
 }

@@ -1,15 +1,14 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, Input, OnInit } from '@angular/core';
 
 @Component({
   selector: 'app-bewerbung',
   templateUrl: './bewerbung.component.html',
-  styleUrls: ['./bewerbung.component.css']
+  styleUrls: ['./bewerbung.component.css'],
 })
 export class BewerbungComponent implements OnInit {
+  constructor() {}
 
-  constructor() { }
+  @Input() linkToApplication: string = 'lol';
 
-  ngOnInit(): void {
-  }
-
+  ngOnInit(): void {}
 }
