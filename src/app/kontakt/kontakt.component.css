@@ -1,75 +1,10 @@
-/*
-.flex-container {
-    display: flex;
-    flex-direction: row; 
-    justify-content: space-evenly;
-    padding-bottom: 5%;
-    
-    
-    
-  
-  
-  }
-  .flex-item-1 { 
-    order: 1;
-    
-    
-  }
-  
-  .flex-item-2 { 
-    order: 2;
-    flex-basis: 25%;
-    
-  }
-  
-  .flex-item-3 { 
-    order: 3;
-    flex-basis: 25%;
-    
-  }
-  
-  .flex-item-4 { 
-    order: 4;
-    flex-basis: 25%;
-    
-  }
 
-  .Alex_bild {
-    height: 150px;
-    border-radius: 50%;
-    padding-bottom: 5%;
-    
-  }
-   
-    .Tim_bild {
-        height: 150px;
-        border-radius: 50%;
-        padding-bottom: 5%;
-    }
-
-    .Torsten_bild {
-        height: 150px;
-        border-radius: 50%;
-        padding-bottom: 5%;
-    }  
-    
-    .Freddy_bild {
-        height: 150px;
-        border-radius: 50%;
-        padding-bottom: 5%;
-        
-    }
-    */
 
     .Schrift {
         font-family: sans-serif;
         font-weight: bold;
-        font-size: xx-large;
-        text-align: center;
+        font-size: 60px;
         padding: 5%;
-        
-        
-        
     }
 
     .content {
@@ -78,13 +13,23 @@
         justify-content: center;
         padding-bottom: 10%;
        
+
+        padding-bottom: 5%;
+        margin-top: 5%;
+        background-color: #03a9f4;
+        
        
     }
     
     .content > mat-card {
         width: 230px;
+
         justify-content: center;
         text-align: center;
+
+        background-color: #eeeeee;
+        text-align:center;
+
     }
 
     .mat-elevation-z4:hover {
@@ -95,3 +40,17 @@
    
    
   
+
+
+.Alex_Überschrift{
+  padding-left: 4%;
+}
+.Tim_Überschrift{
+  padding-left: 10%;
+}
+.Torsten_Überschrift{
+  padding-left: 15%;
+}
+.Frederik_Überschrift{
+  padding-left: 15%;
+}

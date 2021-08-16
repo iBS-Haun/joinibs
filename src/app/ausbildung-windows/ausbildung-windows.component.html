@@ -1,0 +1,62 @@
+<div class="flex-container">
+    <mat-card class="praxis">
+        
+        <mat-card-title>
+            Praxis in der iBS
+        </mat-card-title>
+        <mat-card-content>
+            Während deiner Ausbildung wirst du bereits von Beginn an in interessanten Projekten eingesetzt und lernst alle spannenden Bereiche der iBS kennen. <br>
+            &nbsp;
+        </mat-card-content>
+        <div *ngIf="!isCollapsed1"><mat-card-content >Während der Ausbildung findet die Praxis im Wechsel mit der Berufsschule statt. Dadurch entstehen insgesamt 4 große Praxisphasen. In der ersten Phase lernst du die verschiedenen spannenden Abteilungen der iBS kennen und bekommst bereits einen Einblick die die SAP Anwendungsentwicklung. In den nachfolgenden Phasen arbeitest du an Projekten, die darauf ausgelegt sind, dich perfekt auf die IHK Abschlussprüfung vorzubereiten.
+            <br><br>Hierbei liegt ein besonderes Augenmerk auf:<br><br>
+            <li>Teamarbeit</li>
+            <li>ABAP-Entwicklung (SAP)</li>
+            <li>Dokumentation der Projektarbeit</li>
+            <li>Agile Softwareentwicklung</li>
+            <li>Projektberatung, Konzeption und Organisation</li>
+            </mat-card-content></div>
+        <mat-card-actions>
+            <a><button mat-raised-button color="accent" (click)="toggleCollapse1()">Mehr</button></a>
+        </mat-card-actions>
+    </mat-card>
+
+    <mat-card class="seminar">
+        <mat-card-title>
+            Seminare der DXC-Academy
+        </mat-card-title>
+        <mat-card-content>
+            In Kooperation mit der DXC-Academy hast du ab dem ersten Tag praxisbezogene Seminare, in denen dir erfahrene Trainer die wichtigsten Inhalte für deine Ausbildung vermitteln. <br>
+            &nbsp;
+        </mat-card-content>
+        <div *ngIf="!isCollapsed2"><mat-card-content >In Kooperation mit der DXC-Akademie hast du ab dem ersten Tag praxisbezogene Seminare, in denen dir erfahrene Trainer die wichtigsten Inhalte für deine Ausbildung vermitteln.
+            <br><br> die Themengebiete sind: <br><br>
+            <li>(Software-)Entwicklung [Java, Python, ABAB, HTML, CSS, JavaScript, Typescript]</li>
+            <li>Systemintegration [Grundlagen Netze, Betriebssysteme, Datenbanken]</li>
+            <li>Soft Skills [Kommunikation, Teamarbeit, Präsentieren, Feedback]</li>
+            <li>Sonstiges [Projektmanagement, Business-/ Geschäftsprozessanalyse]</li>
+        </mat-card-content></div>
+        <mat-card-actions>
+            <a><button mat-raised-button color="accent" (click)="toggleCollapse2()">Mehr</button></a>
+        </mat-card-actions>
+    </mat-card>
+
+    <mat-card class="schule">
+        <mat-card-title>
+            Berufsschule
+        </mat-card-title>
+        <mat-card-content>
+            Die Berufsschule findet in Form von Blockunterricht statt. Ein Berufsschulblock geht hierbei durchschnittlich drei Monate. In dieser Zeit lernst du zusätzlich in vier Schulprojekten die verschiedenen Ausbildungsinhalte.
+        </mat-card-content>
+        <div *ngIf="!isCollapsed3"><mat-card-content >In der Berufsschule hat man alles andere als normalen Berufsschulunterricht. Während der Berufsschulblöcke arbeitet man an praxisbezogenen Projekten anstatt langweiligen Frontalunterricht zu haben. 
+            <br><br>
+            <li>Projekt: Einrichten eines IT-gestützten Arbeitsumfeldes.</li>
+            <li>Projekt: Entwicklung einer Webseite</li>
+            <li>Projekt: EDV gestützter Geschäftsprozess</li>
+            <li>Projekt: Entwicklung eines Softwareprodukts für den Freien Markt</li>
+        </mat-card-content></div>
+        <mat-card-actions>
+            <a><button mat-raised-button color="accent" (click)="toggleCollapse3()">Mehr</button></a>
+        </mat-card-actions>
+    </mat-card>
+</div>

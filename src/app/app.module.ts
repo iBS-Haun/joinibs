@@ -22,9 +22,12 @@ import { AboutComponent } from './about/about.component';
 import { MainNavNewComponent } from './main-nav-new/main-nav-new.component';
 import { LayoutModule } from '@angular/cdk/layout';
 import { BewerbungComponent } from './bewerbung/bewerbung.component';
+
 import { FlexLayoutModule } from '@angular/flex-layout';
 import { PiechartFixComponent } from './piechart-fix/piechart-fix.component';
 import { ChartsModule } from 'ng2-charts';
+import { AusbildungWindowsComponent } from './ausbildung-windows/ausbildung-windows.component';
+
 
 
 
@@ -42,6 +45,8 @@ import { ChartsModule } from 'ng2-charts';
     MainNavNewComponent,
     BewerbungComponent,
     PiechartFixComponent,
+    AusbildungWindowsComponent
+
   ],
   imports: [
     MatToolbarModule,
@@ -53,9 +58,9 @@ import { ChartsModule } from 'ng2-charts';
     MatListModule,
     MatButtonModule,
     MatCardModule,
-    FlexLayoutModule,
     LayoutModule,
     ChartsModule,
+    FlexLayoutModule
 
   ],
 
