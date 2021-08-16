@@ -1,0 +1,24 @@
+<div class="flex-container">
+  <mat-card class="praxis">
+    <mat-card-title>
+      {{ cardHeadline }}
+    </mat-card-title>
+    <mat-card-content>
+      {{ cardTextLabel }}
+      <br />
+      &nbsp;
+    </mat-card-content>
+    <div *ngIf="!isCollapsed">
+      <mat-card-content>
+        <ng-content></ng-content>
+      </mat-card-content>
+    </div>
+    <mat-card-actions>
+      <a class="buttons"
+        ><button mat-raised-button color="accent" (click)="onExpandPress()">
+          {{ buttonLabel }}
+        </button></a
+      >
+    </mat-card-actions>
+  </mat-card>
+</div>

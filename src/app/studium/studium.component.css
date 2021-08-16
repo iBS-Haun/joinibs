@@ -36,6 +36,18 @@ a:hover {
 a:active {
   color: #03a9f4;
 }
+.grid-card-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  max-width: 1200px;
+  margin: 1rem auto;
+  gap: 1.5rem;
+  padding: 1.5rem;
+}
+.expended-text {
+  align-items: center;
+  text-align: center;
+}
 @media (max-width: 920px) {
   .grid-container {
     display: grid;

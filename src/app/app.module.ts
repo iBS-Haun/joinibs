@@ -27,6 +27,7 @@ import { FlexLayoutModule } from '@angular/flex-layout';
 import { PiechartFixComponent } from './piechart-fix/piechart-fix.component';
 import { ChartsModule } from 'ng2-charts';
 import { AusbildungWindowsComponent } from './ausbildung-windows/ausbildung-windows.component';
+import { GeneralInfoCardComponent } from './general-info-card/general-info-card.component';
 
 
 
@@ -45,7 +46,8 @@ import { AusbildungWindowsComponent } from './ausbildung-windows/ausbildung-wind
     MainNavNewComponent,
     BewerbungComponent,
     PiechartFixComponent,
-    AusbildungWindowsComponent
+    AusbildungWindowsComponent,
+    GeneralInfoCardComponent
 
   ],
   imports: [
