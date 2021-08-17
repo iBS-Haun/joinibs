@@ -14,7 +14,7 @@
 }
 
 .mat-h3 {
-  color: #03a9f4;
+  color: #009ee0;
 }
 .bewerben-button {
   display: flex;
@@ -22,19 +22,19 @@
   align-items: center;
 }
 a:link {
-  color: #03a9f4;
+  color: #009ee0;
 }
 
 a:visited {
-  color: #03a9f4;
+  color: #009ee0;
 }
 
 a:hover {
-  color: #03a9f4;
+  color: #009ee0;
 }
 
 a:active {
-  color: #03a9f4;
+  color: #009ee0;
 }
 .grid-card-container {
   display: grid;

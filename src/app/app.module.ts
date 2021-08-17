@@ -28,6 +28,7 @@ import { PiechartFixComponent } from './piechart-fix/piechart-fix.component';
 import { ChartsModule } from 'ng2-charts';
 import { AusbildungWindowsComponent } from './ausbildung-windows/ausbildung-windows.component';
 import { GeneralInfoCardComponent } from './general-info-card/general-info-card.component';
+import { ContactCardsComponent } from './contact-cards/contact-cards.component';
 
 
 
@@ -47,7 +48,8 @@ import { GeneralInfoCardComponent } from './general-info-card/general-info-card.
     BewerbungComponent,
     PiechartFixComponent,
     AusbildungWindowsComponent,
-    GeneralInfoCardComponent
+    GeneralInfoCardComponent,
+    ContactCardsComponent
 
   ],
   imports: [
