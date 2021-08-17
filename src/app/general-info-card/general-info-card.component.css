@@ -43,14 +43,14 @@ mat-card-actions {
 }
 
 @media (max-width: 930px) {
-  .scaleable-font {
-    font-size: 1.3vw;
-  }
+  /*   .scaleable-font {
+    font-size: 2rem;
+  } */
   mat-card-title {
     align-items: center;
     justify-content: space-around;
     text-align: center;
     line-height: 115%;
-    font-size: 3vw;
+    font-size: 1.5rem;
   }
 }

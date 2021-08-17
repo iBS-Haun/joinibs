@@ -41,6 +41,5 @@
 mat-card-header {
   align-items: center;
   text-align: center;
-  padding-left: 0.5rem;
-  padding-right: 0.5rem;
+  justify-content: center;
 }
