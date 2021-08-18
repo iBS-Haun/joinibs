@@ -17,7 +17,7 @@ mat-card {
   align-items: center;
   min-height: 25rem;
   padding: 2rem;
-  background: linear-gradient(to bottom, #03a9f4, #eeeeee);
+  background: linear-gradient(to bottom, #009ee0, #fafafa);
 }
 mat-raised-button {
   min-height: 5rem;

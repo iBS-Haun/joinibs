@@ -1,4 +1,4 @@
-<div class="grid-container">
+<!-- <div class="grid-container">
   <div class="main-content">
     <div class="mat-h1">Duales Studium bei der iBS AG</div>
     <div class="mat-body">
@@ -66,7 +66,7 @@
       </div>
     </div>
   </div>
-</div>
+</div> -->
 <app-piechart-fix
   [ChartLabels]="chartLabels"
   [ChartData]="chartData"
@@ -81,7 +81,7 @@
   vier Tage/Woche an der Hochschule. Einen Tag/Woche arbeitest du in der
   iBS, in der vorlesungsfreien Zeit Vollzeit."
   >
-    <div class="expended-text">
+    <div class="expanded-text">
       <p>
         Nach sieben Semestern schließt du dein Studium als Bachelor of Science
         ab. Wenn du möchtest, kannst du dir die Arbeitszeit bei der iBS als
@@ -99,7 +99,7 @@
     cardHeadline="Du bist interessiert?"
     cardTextLabel="Das solltest du mitbringen!"
   >
-    <div class="expended-text">
+    <div class="expanded-text">
       <ul>
         <li>
           Abitur oder Fachhochschulreife mit guten Noten in Mathematik, Deutsch
@@ -117,7 +117,7 @@
     cardHeadline="Wir bieten dir"
     cardTextLabel="Platzehalter für das Label haha"
   >
-    <div class="expended-text">
+    <div class="expanded-text">
       <p>
         Im Rahmen der Praxiszeit bei der iBS arbeitest du direkt in
         Entwicklungsprojekten mit und erwirbst dabei umfassende praktische
@@ -144,12 +144,16 @@
     </p>
   </app-general-info-card>
 </div>
-<app-contact-cards
-  name="Vegeta"
-  email="mailto:deku@decetive-conan.jp"
-  image="https://a-static.besthdwallpaper.com/sasuke-uchiha-und-itachi-von-naruto-shippuden-fur-desktop-tapete-640x960-56036_169.jpg"
-  ><div class="mat-body" class="expended-text">
-    <p>"Omae wa mou shindeiru!" - One Piece</p>
-  </div></app-contact-cards
->
+<div class="contact-card">
+  <div class="grid-container-card">
+    <app-contact-cards
+      name="Triff Peter!"
+      image="./assets/img/der_peter.jpg"
+      email="https://www.ibs-banking.com/de/unternehmen/karriere/meet-the-team/peter-dualer-student-wirtschaftsinformatik.html"
+      buttonLabel="Erfahre mehr"
+    >
+      <i>Peter, dualer Student bei der iBS!</i>
+    </app-contact-cards>
+  </div>
+</div>
 <app-bewerbung [linkToApplication]="linkToApplicationStudium"></app-bewerbung>

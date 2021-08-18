@@ -8,14 +8,14 @@ import { Color, Label, MultiDataSet } from 'ng2-charts';
 })
 export class StudiumComponent implements OnInit {
   linkToApplicationStudium: string =
-    'https://ibs-banking.softgarden.io/applications/d9b507ec-b6d4-4305-83d1-e99102684b54?7&isEditMode=false&isNew=true&l=de';
+    'https://www.ibs-banking.com/de/unternehmen/karriere/job-angebote/442-duales-studium-informatik-wirtschaftsinformatik-wiesbaden.html';
 
   constructor() {}
   chartLabels: Label[] = ['Paxis', 'Vorlesungen'];
   chartData: MultiDataSet = [[50, 50]];
   chartColors: Color[] = [
     {
-      backgroundColor: ['#009EE0', '#eeeeee'],
+      backgroundColor: ['#009EE0', '#85dbff'],
     },
   ];
 

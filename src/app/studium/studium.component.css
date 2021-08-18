@@ -1,11 +1,20 @@
 .contact-card {
-  background-color: #eeeeee;
   padding: 1rem;
+  max-width: 1200px;
+  align-items: center;
+  display: grid;
+  margin: 1rem auto;
 }
 .grid-container {
   display: grid;
   grid-template-columns: 1fr 13rem;
   max-width: 1200px;
+  margin: 1rem auto;
+  gap: 1.5rem;
+  padding: 1.5rem;
+}
+.grid-container-card {
+  display: grid;
   margin: 1rem auto;
   gap: 1.5rem;
   padding: 1.5rem;
@@ -42,7 +51,7 @@ a:active {
   gap: 1.5rem;
   padding: 1.5rem;
 }
-.expended-text {
+.expanded-text {
   align-items: center;
   text-align: center;
 }

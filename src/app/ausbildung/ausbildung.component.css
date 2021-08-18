@@ -1,3 +1,16 @@
 h1 {
-    color:blue
+  color: blue;
+}
+.grid-container-card {
+  display: grid;
+  margin: 1rem auto;
+  gap: 1.5rem;
+  padding: 1.5rem;
+}
+.contact-card {
+  padding: 1rem;
+  max-width: 1200px;
+  align-items: center;
+  display: grid;
+  margin: 1rem auto;
 }

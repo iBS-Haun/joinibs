@@ -10,6 +10,7 @@ export class ContactCardsComponent implements OnInit {
   @Input() name: string = 'temp';
   @Input() image: string = 'temp';
   @Input() email: string = 'temp';
+  @Input() buttonLabel: string = 'Kontaktiere mich!';
 
   constructor() {}
 

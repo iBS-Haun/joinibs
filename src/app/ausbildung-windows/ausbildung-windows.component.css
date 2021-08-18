@@ -1,67 +1,12 @@
-.flex-container{
-    display:grid;
-    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
-    max-width: 1200px;
-    margin: 1rem auto;
-    gap: 1.5rem;
-    padding: 1.5rem;
-    justify-content:space-evenly;
-    align-items: center;
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  max-width: 1200px;
+  margin: 1rem auto;
+  gap: 1.5rem;
+  padding: 1.5rem;
 }
-
-mat-card-title{
-    align-items:center;
-    justify-content:space-around;
-    text-align: center;
-    line-height: 115%;
+.expanded-text {
+  align-items: center;
+  text-align: center;
 }
-mat-card{
-    width: fit-content;
-    border-radius: 15px;
-    background-size: cover;
-    background-position: right;
-    transition: 250ms;
-    width: 100%;
-    box-sizing: border-box;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    min-height: 25rem;
-    padding: 2rem;
-    background: linear-gradient(to bottom, #03a9f4, #EEEEEE) ;
-}
-mat-raised-button {
-    min-height: 5rem;
-    white-space: normal;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    word-wrap: break-word;
-    word-break: break-word;
-    white-space: normal;
-  }
-mat-card-actions{
-    justify-content: center;
-    align-items: center;
-}
-.buttons {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    word-wrap: break-word;
-    word-break: break-word;
-    white-space: normal;
-  }
-@media (max-width: 930px) {
-    .scaleable-font {
-      font-size: 1.3vw;
-    }
-    mat-card-title {
-      align-items: center;
-      justify-content: space-around;
-      text-align: center;
-      line-height: 115%;
-      font-size: 3vw;
-    }
-  }
-  
