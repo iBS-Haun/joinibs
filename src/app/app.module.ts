@@ -29,6 +29,10 @@ import { ChartsModule } from 'ng2-charts';
 import { AusbildungWindowsComponent } from './ausbildung-windows/ausbildung-windows.component';
 import { GeneralInfoCardComponent } from './general-info-card/general-info-card.component';
 import { ContactCardsComponent } from './contact-cards/contact-cards.component';
+import { GoogleMapsModule } from '@angular/google-maps';
+import { MapsComponent } from './maps/maps.component';
+
+
 
 
 
@@ -49,7 +53,8 @@ import { ContactCardsComponent } from './contact-cards/contact-cards.component';
     PiechartFixComponent,
     AusbildungWindowsComponent,
     GeneralInfoCardComponent,
-    ContactCardsComponent
+    ContactCardsComponent,
+    MapsComponent
 
   ],
   imports: [
@@ -64,7 +69,9 @@ import { ContactCardsComponent } from './contact-cards/contact-cards.component';
     MatCardModule,
     LayoutModule,
     ChartsModule,
-    FlexLayoutModule
+    FlexLayoutModule,
+    GoogleMapsModule
+  
 
   ],
 
