@@ -8,6 +8,7 @@ import { KontaktComponent } from './kontakt/kontakt.component';
 
 import { StudiumComponent } from './studium/studium.component';
 import { KevinsComponentComponent } from './kevins-component/kevins-component.component';
+import { LoginComponent } from './login/login.component';
 
 
 const routes: Routes = [
@@ -18,7 +19,9 @@ path: 'ausbildung'},
 { component: StudiumComponent,
 path: 'studium'},
 { component: KontaktComponent,
-path: 'kontakt'} 
+path: 'kontakt'},
+{ component: LoginComponent,
+path: 'login'}
 ];
 
 @NgModule({
