@@ -29,6 +29,8 @@ import { ChartsModule } from 'ng2-charts';
 import { AusbildungWindowsComponent } from './ausbildung-windows/ausbildung-windows.component';
 import { GeneralInfoCardComponent } from './general-info-card/general-info-card.component';
 import { ContactCardsComponent } from './contact-cards/contact-cards.component';
+import { LoginComponent } from './login/login.component';
+import { MatInputModule } from '@angular/material/input'
 
 
 
@@ -49,7 +51,8 @@ import { ContactCardsComponent } from './contact-cards/contact-cards.component';
     PiechartFixComponent,
     AusbildungWindowsComponent,
     GeneralInfoCardComponent,
-    ContactCardsComponent
+    ContactCardsComponent,
+    LoginComponent
 
   ],
   imports: [
@@ -64,7 +67,8 @@ import { ContactCardsComponent } from './contact-cards/contact-cards.component';
     MatCardModule,
     LayoutModule,
     ChartsModule,
-    FlexLayoutModule
+    FlexLayoutModule,
+    MatInputModule,
 
   ],
 
