@@ -15,7 +15,7 @@ export class StudiumComponent implements OnInit {
   chartData: MultiDataSet = [[50, 50]];
   chartColors: Color[] = [
     {
-      backgroundColor: ['#009EE0', '#85dbff'],
+      backgroundColor: ['#009EE0', '#d1ebf0'],
     },
   ];
 

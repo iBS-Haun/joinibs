@@ -31,6 +31,7 @@ import { GeneralInfoCardComponent } from './general-info-card/general-info-card.
 import { ContactCardsComponent } from './contact-cards/contact-cards.component';
 import { LoginComponent } from './login/login.component';
 import { MatInputModule } from '@angular/material/input';
+import { MapsComponent } from './maps/maps.component';
 
 
 
@@ -54,7 +55,8 @@ import { MatInputModule } from '@angular/material/input';
     AusbildungWindowsComponent,
     GeneralInfoCardComponent,
     ContactCardsComponent,
-    LoginComponent
+    LoginComponent,
+    MapsComponent
 
 
   ],

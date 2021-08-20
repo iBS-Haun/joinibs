@@ -1,0 +1,29 @@
+.map {
+    display: flex;
+    justify-content: center;
+    padding: 5%;
+    
+    
+    
+    
+   
+    
+    
+}
+
+.map-text {
+    padding: 10%;
+    font-family: sans-serif;
+    font-size: large;
+    width: 30%;
+    background-color: #eeeeee;
+    color: #009ee0;
+    
+    
+}
+
+.google-map {
+    width: 70%;
+    background-color: #eeeeee;
+    
+}

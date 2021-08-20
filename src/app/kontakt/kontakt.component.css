@@ -14,12 +14,13 @@
 }
 
 .card-container {
-  display: grid;
+  display: flex;
   gap: 1.5rem;
   padding: 1.5rem;
   grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
-  background-color: #009ee0;
   margin: 1rem auto;
+  background-color: #009ee0;
+  
 }
 
 .mat-elevation-z4:hover {
@@ -34,11 +35,12 @@
     justify-content: center;
   } */
   .headline {
-    font-size: 4rem;
-    margin: 1rem auto;
-    gap: 1.5rem;
+    text-align: center;
+    font-family: sans-serif;
+    font-size: 2.5rem;
     padding: 1.5rem;
-    line-height: 5rem;
+    font-weight: 600;
+    color: #009ee0;
   }
 }
 @media (max-width: 320px) {
