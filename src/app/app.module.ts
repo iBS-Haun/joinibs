@@ -30,7 +30,8 @@ import { AusbildungWindowsComponent } from './ausbildung-windows/ausbildung-wind
 import { GeneralInfoCardComponent } from './general-info-card/general-info-card.component';
 import { ContactCardsComponent } from './contact-cards/contact-cards.component';
 import { LoginComponent } from './login/login.component';
-import { MatInputModule } from '@angular/material/input'
+import { MatInputModule } from '@angular/material/input';
+
 
 
 
@@ -71,6 +72,7 @@ import { MatInputModule } from '@angular/material/input'
     ChartsModule,
     FlexLayoutModule,
     MatInputModule,
+   
 
 
   ],
