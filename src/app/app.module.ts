@@ -29,9 +29,8 @@ import { ChartsModule } from 'ng2-charts';
 import { AusbildungWindowsComponent } from './ausbildung-windows/ausbildung-windows.component';
 import { GeneralInfoCardComponent } from './general-info-card/general-info-card.component';
 import { ContactCardsComponent } from './contact-cards/contact-cards.component';
-import { GoogleMapsModule } from '@angular/google-maps';
-import { MapsComponent } from './maps/maps.component';
-
+import { LoginComponent } from './login/login.component';
+import { MatInputModule } from '@angular/material/input'
 
 
 
@@ -54,7 +53,8 @@ import { MapsComponent } from './maps/maps.component';
     AusbildungWindowsComponent,
     GeneralInfoCardComponent,
     ContactCardsComponent,
-    MapsComponent
+    LoginComponent
+
 
   ],
   imports: [
@@ -70,8 +70,8 @@ import { MapsComponent } from './maps/maps.component';
     LayoutModule,
     ChartsModule,
     FlexLayoutModule,
-    GoogleMapsModule
-  
+    MatInputModule,
+
 
   ],
 
