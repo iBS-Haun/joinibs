@@ -12,7 +12,10 @@
 }
 
 .map-text {
-    padding: 10%;
+    
+    display: grid;
+    justify-content: center;
+    align-items: center;
     font-family: sans-serif;
     font-size: large;
     width: 30%;
