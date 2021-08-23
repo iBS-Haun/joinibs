@@ -29,7 +29,13 @@ mat-card-actions {
   align-items: center;
   text-align: center;
   justify-content: center;
+  
 }
+
+.button {
+  color: #009ee0;
+}
+
 /* .mat-drawer-container {
   align-items: center;
 }

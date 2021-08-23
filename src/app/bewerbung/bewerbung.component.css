@@ -2,6 +2,7 @@
   /* margin-bottom: 10%; */
   justify-content: center;
   width: 100%;
+  padding-bottom: 5%;
 }
 .Inhalt {
   text-align: center;
@@ -9,8 +10,10 @@
   font-size: 25px;
   /* padding-top: 1rem;
   padding-bottom: 1rem; */
-  background-image: url("https://wallpaperaccess.com/full/449940.jpg");
+  
+  background-color: #eeeeee;
   padding: 2rem;
+  
 }
 .button:hover {
   transform: translateY(-5px);
@@ -27,4 +30,8 @@ h2 {
 }
 .Text {
   margin-top: 5%;
+}
+
+.email {
+  color: #009ee0;
 }
