@@ -1,9 +1,42 @@
-.about {
-  text-align: center;
-  background-image: url("https://www.jpbprofessionalmarketing.com/wp-content/uploads/2020/02/AdobeStock_301779119-scaled.jpeg");
-  width: 100%;
-  display: column;
 
+.banner::after {
+  content: "";
+  display: block;
+  width: 100%;
+  height: 100%;
+  background-color: #fff;
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: .7;
+  z-index: 0;
+
+}
+
+
+.banner {
+  text-align: center;
+  background-image: url("https://thumbs.dreamstime.com/b/female-hands-typing-laptop-student-workspace-banner-copy-space-e-learning-concept-blue-pastel-background-201752087.jpg");
+  width: 100%;
+  height: 500px;
+  
+  -webkit-background-size: cover;
+  background-size: cover;
+  background-position: center center;
+  position: relative;
+
+
+}
+
+.banner >* {
+  z-index: 10;
+  position: relative;
+  
+}
+
+.mat-h3 {
+  font-family: sans-serif;
+  color: black;
 }
 
 
@@ -23,7 +56,7 @@ p.absatz {
 }
 @-webkit-keyframes einblenden {
     from { opacity:0; }
-    to { opacity:1; }
+    to { opacity:1; }2222222222222
 }
  
 .fancy {
