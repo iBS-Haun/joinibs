@@ -73,77 +73,20 @@
   [colors]="chartColors"
   headline="Dein duales Studium bei der iBS AG"
 ></app-piechart-fix>
+
 <div class="grid-card-container">
-  <app-general-info-card
-    cardHeadline="Praxis in der IBs"
-    cardTextLabel="Mit dem dualem Studium bei der iBS erwirbst du akademisches Know-how und
-  sammelst wertvolle Berufserfahrung. Während der Vorlesungszeit bist du
-  vier Tage/Woche an der Hochschule. Einen Tag/Woche arbeitest du in der
-  iBS, in der vorlesungsfreien Zeit Vollzeit."
-  >
-    <div class="expanded-text">
-      <p>
-        Nach sieben Semestern schließt du dein Studium als Bachelor of Science
-        ab. Wenn du möchtest, kannst du dir die Arbeitszeit bei der iBS als
-        Praxisphase anrechnen lassen und das Studium bereits nach 6 Semestern
-        beenden.
-      </p>
-      <p>
-        Beim Studiengang der Angewandten Informatik kannst du zusätzlich nach
-        2,5 Jahren eine IHK-Prüfung zum Fachinformatiker – Fachrichtung
-        Anwendungsentwicklung ablegen.
-      </p>
-    </div>
-  </app-general-info-card>
-  <app-general-info-card
-    cardHeadline="Du bist interessiert?"
-    cardTextLabel="Das solltest du mitbringen!"
-  >
-    <div class="expanded-text">
-      <ul>
-        <li>
-          Abitur oder Fachhochschulreife mit guten Noten in Mathematik, Deutsch
-          und Englisch
-        </li>
-        <li>hohes Interesse für bankfachliche Themen und Geschäftsprozesse</li>
-        <li>Spaß daran, Herausforderungen gemeinsam im Team zu lösen</li>
-        <li>
-          und vor allem viel Enthusiasmus, Engagement und Lernbereitschaft
-        </li>
-      </ul>
-    </div>
-  </app-general-info-card>
-  <app-general-info-card
-    cardHeadline="Wir bieten dir"
-    cardTextLabel="Platzehalter für das Label haha"
-  >
-    <div class="expanded-text">
-      <p>
-        Im Rahmen der Praxiszeit bei der iBS arbeitest du direkt in
-        Entwicklungsprojekten mit und erwirbst dabei umfassende praktische
-        Kenntnisse bezüglich
-      </p>
-      <ul>
-        <li>Konzeption, Entwicklung und Test von Softwarelösungen</li>
-        <li>SAP Systemarchitektur, Module und Schnittstellentechniken</li>
-        <li>Objektorientierte Programmierung mit ABAP-OO</li>
-        <li>Anpassen von Software- und Datenbankanwendungen</li>
-        <li>Organisation und Koordination von Projekten</li>
-        <li>Bankfachliche Aufgabenstellungen</li>
-      </ul>
-    </div>
-    <p>
-      Begleitende praxisorientierte Inhouse-Seminare und Mentoring durch
-      erfahrene Kollegen unterstützen dich dabei, deine Kenntnisse und
-      Fertigkeiten zu vertiefen.
-    </p>
-    <h1>HIER MUSS NOCH DIE GENAUE HÖHE DES GEHALTS REIN</h1>
-    <p>
-      Außerdem zahlen wir dir ein Gehalt in Höhe von... und übernehmen deine
-      Semestergebühren.
-    </p>
-  </app-general-info-card>
+  <div *ngFor="let cardContent of infoCardContent | async">
+    <app-general-info-card
+      [cardHeadline]="cardContent.headline"
+      [cardTextLabel]="cardContent.labeltext"
+    >
+      <div class="expanded-text">
+        {{ cardContent.contenttext }}
+      </div>
+    </app-general-info-card>
+  </div>
 </div>
+
 <div class="contact-card">
   <div class="grid-container-card">
     <app-contact-cards

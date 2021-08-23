@@ -1,4 +1,6 @@
-import { Component, Input, OnInit } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
+import { Observable, Subject } from 'rxjs';
+import { cardContent, InfoCardService } from '../info-card.service';
 
 @Component({
   selector: 'app-ausbildung-windows',
@@ -6,5 +8,9 @@ import { Component, Input, OnInit } from '@angular/core';
   styleUrls: ['./ausbildung-windows.component.css'],
 })
 export class AusbildungWindowsComponent implements OnInit {
-  ngOnInit(): void {}
+  constructor(private infoCardService: InfoCardService) {}
+  infoCardContent: Observable<cardContent[]> = new Subject();
+  ngOnInit(): void {
+    this.infoCardContent = this.infoCardService.getInfoCardDataAusbildung();
+  }
 }

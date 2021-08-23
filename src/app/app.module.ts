@@ -33,6 +33,7 @@ import { LoginComponent } from './login/login.component';
 import { MatInputModule } from '@angular/material/input';
 import { KontaktService } from './kontakt/kontakt.service';
 import { HttpClientModule } from '@angular/common/http';
+import { InfoCardService } from './info-card.service';
 
 @NgModule({
   declarations: [
@@ -70,7 +71,7 @@ import { HttpClientModule } from '@angular/common/http';
     HttpClientModule,
   ],
 
-  providers: [KontaktService],
+  providers: [KontaktService, InfoCardService],
   bootstrap: [AppComponent],
 })
 export class AppModule {}

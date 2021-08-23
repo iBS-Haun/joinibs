@@ -1,4 +1,17 @@
 <div class="grid-container">
+  <div *ngFor="let cardContent of infoCardContent | async">
+    <app-general-info-card
+      [cardHeadline]="cardContent.headline"
+      [cardTextLabel]="cardContent.labeltext"
+    >
+      <div class="expanded-text">
+        {{ cardContent.contenttext }}
+      </div>
+    </app-general-info-card>
+  </div>
+</div>
+
+<!-- <div class="grid-container">
   <app-general-info-card
     cardHeadline="Praxis in der iBS"
     cardTextLabel="Während deiner Ausbildung wirst du bereits von Beginn an in interessanten
@@ -65,3 +78,4 @@
     </div>
   </app-general-info-card>
 </div>
+ -->

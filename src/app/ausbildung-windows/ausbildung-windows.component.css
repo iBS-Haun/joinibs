@@ -9,4 +9,5 @@
 .expanded-text {
   align-items: center;
   text-align: center;
+  white-space: pre-line;
 }
