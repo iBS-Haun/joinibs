@@ -3,6 +3,19 @@
 </div>
 
 <div class="card-container">
+  <div class="grid-container-card" *ngFor="let kontakt of kontakte | async">
+    <app-contact-cards
+      [name]="kontakt.name"
+      [email]="'mailto:' + kontakt.email"
+      [image]="'http://localhost:1337' + kontakt.img[0].url"
+      ><div style="white-space: pre-line">
+        {{ kontakt.jobdescription }}
+      </div></app-contact-cards
+    >
+  </div>
+</div>
+
+<!-- <div class="card-container">
   <div class="grid-container-card">
     <app-contact-cards
       name="Alexander Strohbach"
@@ -58,3 +71,4 @@
     </app-contact-cards>
   </div>
 </div>
+ -->

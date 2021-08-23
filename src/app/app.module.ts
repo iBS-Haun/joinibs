@@ -30,10 +30,9 @@ import { AusbildungWindowsComponent } from './ausbildung-windows/ausbildung-wind
 import { GeneralInfoCardComponent } from './general-info-card/general-info-card.component';
 import { ContactCardsComponent } from './contact-cards/contact-cards.component';
 import { LoginComponent } from './login/login.component';
-import { MatInputModule } from '@angular/material/input'
-
-
-
+import { MatInputModule } from '@angular/material/input';
+import { KontaktService } from './kontakt/kontakt.service';
+import { HttpClientModule } from '@angular/common/http';
 
 @NgModule({
   declarations: [
@@ -52,8 +51,7 @@ import { MatInputModule } from '@angular/material/input'
     AusbildungWindowsComponent,
     GeneralInfoCardComponent,
     ContactCardsComponent,
-    LoginComponent
-
+    LoginComponent,
   ],
   imports: [
     MatToolbarModule,
@@ -69,10 +67,10 @@ import { MatInputModule } from '@angular/material/input'
     ChartsModule,
     FlexLayoutModule,
     MatInputModule,
-
+    HttpClientModule,
   ],
 
-  providers: [],
+  providers: [KontaktService],
   bootstrap: [AppComponent],
 })
 export class AppModule {}

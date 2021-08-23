@@ -6,7 +6,7 @@ h1 {
 }
 
 .chart-wrapper {
-  width: 100%;
+  width: auto;
   margin-left: auto;
   margin-right: auto;
   padding: 5%;
@@ -18,5 +18,8 @@ h1 {
     font-family: sans-serif;
     font-size: 2rem;
     padding: 1.5rem;
+  }
+  .chart-wrapper {
+    width: auto;
   }
 }
