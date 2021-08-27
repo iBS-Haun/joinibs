@@ -1,17 +1,31 @@
-<app-piechart-fix></app-piechart-fix>
+<app-piechart-fix
+  *ngIf="resolvedPiechartContent && resolvedPiechartContent.anzeigen"
+  [ChartLabels]="piechartLabels"
+  [ChartData]="piechartData"
+  [colors]="piechartColors"
+  headline="'Deine Ausbildung bei der iBS AG'"
+></app-piechart-fix>
 <app-ausbildung-windows></app-ausbildung-windows>
+
 <div class="contact-card">
-  <div class="grid-container-card">
+  <div class="grid-container-card" *ngFor="let kontaktData of kontakt | async">
     <app-contact-cards
-      name="Triff Anel!"
-      image="./assets/img/anel.jpg"
-      email="https://www.ibs-banking.com/de/unternehmen/karriere/meet-the-team/anel-auszubildende-fachinformatik-anwendungsentwicklung.html"
-      buttonLabel="Erfahre mehr"
+      [name]="kontaktData.name"
+      [image]="'http://localhost:1337' + kontaktData.img[0].url"
+      [email]="kontaktData.link"
+      [buttonLabel]="kontaktData.buttonlabel"
     >
-      <i>Anel, Auszubildende bei der iBS!</i>
+      <div style="white-space: pre-line">
+        {{ kontaktData.jobdescription }}
+      </div>
     </app-contact-cards>
   </div>
 </div>
 <app-bewerbung
-  [linkToApplication]="linkToApplicationAusbildung"
+  *ngIf="resolvedContent"
+  [headline]="resolvedContent.headline"
+  [textbody]="resolvedContent.text"
+  [email]="resolvedContent.email"
+  [buttonlabel]="resolvedContent.buttonlabel"
+  [linkToApplication]="resolvedContent.linkausbildung"
 ></app-bewerbung>

@@ -34,6 +34,10 @@ import { MatInputModule } from '@angular/material/input';
 import { KontaktService } from './kontakt/kontakt.service';
 import { HttpClientModule } from '@angular/common/http';
 import { InfoCardService } from './info-card.service';
+import { BewerbungsService } from './bewerbung.service';
+import { AboutService } from './about/about.service';
+import { WindowsService } from './windows/windows.service';
+import { PiechartService } from './piechart-fix/piechart-fix.service';
 
 @NgModule({
   declarations: [
@@ -71,7 +75,14 @@ import { InfoCardService } from './info-card.service';
     HttpClientModule,
   ],
 
-  providers: [KontaktService, InfoCardService],
+  providers: [
+    KontaktService,
+    InfoCardService,
+    BewerbungsService,
+    AboutService,
+    WindowsService,
+    PiechartService,
+  ],
   bootstrap: [AppComponent],
 })
 export class AppModule {}

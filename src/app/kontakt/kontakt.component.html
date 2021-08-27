@@ -8,67 +8,10 @@
       [name]="kontakt.name"
       [email]="'mailto:' + kontakt.email"
       [image]="'http://localhost:1337' + kontakt.img[0].url"
+      [buttonLabel]="kontakt.buttonlabel"
       ><div style="white-space: pre-line">
         {{ kontakt.jobdescription }}
       </div></app-contact-cards
     >
   </div>
 </div>
-
-<!-- <div class="card-container">
-  <div class="grid-container-card">
-    <app-contact-cards
-      name="Alexander Strohbach"
-      image="assets/img/Alex.jpg"
-      email="mailto:alexander.strohbach@ibs-banking.com"
-    >
-      <p>
-        <i>SAP-Software Architekt <br />Ausbilder</i>
-      </p>
-    </app-contact-cards>
-  </div>
-  <div class="grid-container-card">
-    <app-contact-cards
-      name="Tim Saalwächter"
-      image="assets/img/Tim.png"
-      email="mailto:mailto:karriere@ibs-banking.com"
-    >
-      <p>
-        <i
-          >Human Resources <br />
-          Personalreferent</i
-        >
-      </p></app-contact-cards
-    >
-  </div>
-  <div class="grid-container-card">
-    <app-contact-cards
-      name="Torsten Köster"
-      image="assets/img/Torsten.jpg"
-      email="mailto:ausbildung@ibs-banking.com"
-    >
-      <p>
-        <i
-          >Head of Test Factory <br />
-          Koordination Ausbildung</i
-        >
-      </p>
-    </app-contact-cards>
-  </div>
-
-  <div class="grid-container-card">
-    <app-contact-cards
-      name="Frederik Weyer"
-      image="assets/img/Freddy.jpg"
-      email="mailto:frederik.weyer@ibs-banking.com"
-    >
-      <p>
-        <i
-          >Application Developer <br />
-          Koordination Duales Studium</i
-        >
-      </p>
-    </app-contact-cards>
-  </div>
-</div>
- -->

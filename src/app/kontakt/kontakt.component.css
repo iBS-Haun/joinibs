@@ -19,7 +19,9 @@
   padding: 1.5rem;
   grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
   background-color: #009ee0;
-  margin: 1rem auto;
+  margin: auto;
+  align-items: center;
+  justify-items: center;
 }
 
 .mat-elevation-z4:hover {
@@ -40,28 +42,4 @@
     padding: 1.5rem;
     line-height: 5rem;
   }
-}
-@media (max-width: 320px) {
-  /*   .card-container {
-    padding-left: 0.5rem;
-  } */
-}
-
-@media (min-width: 400px) {
-  /*   .card-container {
-    padding-left: 4rem;
-  } */
-}
-
-@media (min-width: 1920px) {
-  /*   .card-container {
-    padding-left: 11rem;
-  } */
-}
-.grid-container-card {
-  display: grid;
-  margin: 1rem auto;
-  gap: 1.5rem;
-  padding: 1.5rem;
-  min-width: 272px;
 }

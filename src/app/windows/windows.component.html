@@ -1,4 +1,4 @@
-<div class="flex-container">
+<!-- <div class="flex-container">
   <mat-card class="karriere karriere-card">
     <mat-card-title class="titel">Karriere bei der iBS</mat-card-title>
     <mat-card-actions>
@@ -41,6 +41,36 @@
           routerLinkActive="active"
         >
           Mehr Infos zum dualen Studium
+        </button>
+      </div>
+    </mat-card-actions>
+  </mat-card>
+</div> -->
+<div class="flex-container">
+  <mat-card
+    class="karriere-card"
+    *ngFor="let windowData of windowContent | async"
+    style="background-image:url('{{ img + windowData.img[0].url }}') ;"
+  >
+    <mat-card-title class="titel">{{ windowData.headline }}</mat-card-title>
+    <mat-card-actions>
+      <div class="buttons">
+        <a
+          *ngIf="routerConfig[windowData.linkZuSeite].isExternal"
+          [href]="routerConfig[windowData.linkZuSeite].url"
+          ><button mat-raised-button color="accent">
+            {{ windowData.buttonlabel }}
+          </button></a
+        >
+        <button
+          *ngIf="!routerConfig[windowData.linkZuSeite].isExternal"
+          mat-raised-button
+          color="accent"
+          href="#"
+          [routerLink]="routerConfig[windowData.linkZuSeite].url"
+          routerLinkActive="active"
+        >
+          {{ windowData.buttonlabel }}
         </button>
       </div>
     </mat-card-actions>

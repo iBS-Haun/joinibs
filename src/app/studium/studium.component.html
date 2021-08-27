@@ -68,9 +68,10 @@
   </div>
 </div> -->
 <app-piechart-fix
-  [ChartLabels]="chartLabels"
-  [ChartData]="chartData"
-  [colors]="chartColors"
+  *ngIf="resolvedPiechartContent && resolvedPiechartContent.anzeigen"
+  [ChartLabels]="piechartLabels"
+  [ChartData]="piechartData"
+  [colors]="piechartColors"
   headline="Dein duales Studium bei der iBS AG"
 ></app-piechart-fix>
 
@@ -88,15 +89,24 @@
 </div>
 
 <div class="contact-card">
-  <div class="grid-container-card">
+  <div class="grid-container-card" *ngFor="let kontaktData of kontakt | async">
     <app-contact-cards
-      name="Triff Peter!"
-      image="./assets/img/der_peter.jpg"
-      email="https://www.ibs-banking.com/de/unternehmen/karriere/meet-the-team/peter-dualer-student-wirtschaftsinformatik.html"
-      buttonLabel="Erfahre mehr"
+      [name]="kontaktData.name"
+      [image]="'http://localhost:1337' + kontaktData.img[0].url"
+      [email]="kontaktData.link"
+      [buttonLabel]="kontaktData.buttonlabel"
     >
-      <i>Peter, dualer Student bei der iBS!</i>
+      <div style="white-space: pre-line">
+        {{ kontaktData.jobdescription }}
+      </div>
     </app-contact-cards>
   </div>
 </div>
-<app-bewerbung [linkToApplication]="linkToApplicationStudium"></app-bewerbung>
+<app-bewerbung
+  *ngIf="resolvedContent"
+  [headline]="resolvedContent.headline"
+  [textbody]="resolvedContent.text"
+  [email]="resolvedContent.email"
+  [buttonlabel]="resolvedContent.buttonlabel"
+  [linkToApplication]="resolvedContent.linkstudium"
+></app-bewerbung>

@@ -1,36 +1,17 @@
 <div class="Bewerbung-Container">
   <div class="Inhalt">
-    <div class="mat-h1">Jetzt Bewerben!</div>
-    <!-- <div class="Text">
-      Bewerbe dich jetzt über unser Bewerbungsportal oder alternativ per E-Mail
-      an
-
-      <a href="mailto:ausbildung@ibs-banking.com"
-        ><br /><br />ausbildung@ibs-banking.com</a
-      >
-    </div>
-
-    <div>
-      <a href="{{ linkToApplication }}"
-        ><button class="button" mat-raised-button color="accent">
-          Zum Bewerbungsportal
-        </button></a
-      >
-    </div> -->
+    <div class="mat-h1">{{ headline }}</div>
     <div class="mat-h3">
-      Bewirb dich jetzt über unser Bewerbungsportal oder alternativ per E-Mail
-      an
+      {{ textbody }}
       <div class="mat-h3">
-        <a href="mailto:ausbildung@ibs-banking.com"
-          >ausbildung@ibs-banking.com</a
-        >
+        <a href="'mailto:' + {{ email }}">{{ email }}</a>
       </div>
     </div>
 
     <div>
       <a href="{{ linkToApplication }}"
         ><button class="button" mat-raised-button color="accent">
-          Zum Bewerbungsportal
+          {{ buttonlabel }}
         </button></a
       >
     </div>

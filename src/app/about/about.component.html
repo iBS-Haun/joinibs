@@ -1,25 +1,13 @@
-<div class="about">
-  <a><img src="assets/img/geileslogo.png" /></a>
-
-  <div class="mat-h1">iBS - Smart Application for Banking on SAP</div>
-  <br /><br />
-
-  <div class="mat-h3">
-    Die iBS - innovative Solutions AG ist einer der führenden Hersteller von
-    SAP-basierter Standardsoftware für den Bereich Banking.
-  </div>
-  <div class="mat-h3">
-    Seit 2000 konzipieren, entwickeln, implementieren und pflegen wir Lösungen
-    in den Bereichen Meldewesen, Risikomanagement, Tax Compliance sowie
-    Geschäftsprozesse von Spezialbanken.
-  </div>
-  <div class="mat-h3">
-    Die iBS hat ihren Hauptsitz in Wiesbaden, Deutschland mit Extended
-    Development Centern in Kosice, Slowakei und Sevilla, Spanien.
-  </div>
+<div class="about" *ngIf="resolvedContent" style="white-space: pre-line">
+  <a><img [src]="'http://localhost:1337' + resolvedContent.img[0].url" /></a>
+  <div class="mat-h1">{{ resolvedContent.headline }}</div>
+  <br />
+  <div class="mat-h3">{{ resolvedContent.textbody }}</div>
   <div class="button">
-    <a href="https://www.ibs-banking.com/de/unternehmen/profil.html"
-      ><button mat-raised-button color="accent">Mehr erfahren</button></a
+    <a href="{{ resolvedContent.link }}"
+      ><button mat-raised-button color="accent">
+        {{ resolvedContent.buttonlabel }}
+      </button></a
     >
   </div>
 </div>

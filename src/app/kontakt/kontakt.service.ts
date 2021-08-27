@@ -5,6 +5,8 @@ export interface Kontakt {
   name: string;
   img: { url: string }[];
   jobdescription: string;
+  link: string;
+  buttonlabel: string;
 }
 
 @Injectable()
@@ -13,6 +15,16 @@ export class KontaktService {
   getContactData() {
     return this.httpClient.get<Kontakt[]>(
       'http://localhost:1337/kontakkartes/'
+    );
+  }
+  getContactStudium() {
+    return this.httpClient.get<Kontakt[]>(
+      'http://localhost:1337/studiumcontactcards/'
+    );
+  }
+  getContactAusbildung() {
+    return this.httpClient.get<Kontakt[]>(
+      'http://localhost:1337/ausbildungscontactcards/'
     );
   }
 }
